@@ -1,0 +1,6 @@
+ // Register $log decorator with AngularJS $provider
+ $provide.decorator('$log', [ "$delegate", function ($delegate) {
+        /** 
+        * Encapsulates functionality to extends $log and expose additional functionality
+        **/
+        var logEnhancerObj = function () {

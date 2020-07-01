@@ -1,0 +1,1 @@
+angular.module("log.ex.uo", [ ]).provider('logEx', ['$provide', function ($provide) {

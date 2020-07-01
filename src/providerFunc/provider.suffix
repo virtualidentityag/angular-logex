@@ -1,0 +1,32 @@
+
+    /**
+    * Default $get method necessary for provider to work
+    * @type {Function}
+    */
+    this.$get = function(){
+        return {
+            name: '%APP_NAME%',
+            version: '%VERSION%',
+            enableLogging: enableLogging,
+            restrictLogMethods: restrictLogMethods,
+            overrideLogPrefix: overrideLogPrefix,
+            disableDefaultColors: disableDefaultColors,
+            setLogMethodColor: setLogMethodColor,
+            overrideLogMethodColors: overrideLogMethodColors,
+            useDefaultLogPrefix: useDefaultLogPrefix,
+            configureLogFilters: configureLogFilters,
+            useTemplates: useTemplates
+        };
+    };
+
+    // add methods to $provider
+    this.enableLogging = enableLogging;
+    this.overrideLogPrefix = overrideLogPrefix;
+    this.restrictLogMethods = restrictLogMethods;
+    this.disableDefaultColors = disableDefaultColors;
+    this.setLogMethodColor = setLogMethodColor;
+    this.overrideLogMethodColors = overrideLogMethodColors;
+    this.useDefaultLogPrefix = useDefaultLogPrefix;
+    this.configureLogFilters = configureLogFilters;
+    this.useTemplates = useTemplates;
+}]);
