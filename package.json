@@ -1,5 +1,5 @@
 {
-  "name": "LogUnobtrusiveExtension",
+  "name": "@virtualidentityag/angular-logex",
   "appname": "Log Unobtrusive Extension",
   "description": "Used within AngularJS to enhance functionality within the AngularJS $log service.",
   "author": "A confused individual <ferronrsmith@gmail.com>",
